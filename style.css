@@ -1,20 +1,20 @@
 /* General Styling */
 body {
-    font-family: 'Lucida Console', sans-serif; /* Clean and modern font */
+    font-family: 'Tahoma', sans-serif; /* Updated font */
     margin: 0;
     padding: 0;
     line-height: 1.6;
-    background-color: #f9f9fb; /* Subtle background color */
-    color: #333; /* Dark text for readability */
+    background-color: #f9f9fb; /* Subtle background */
+    color: #333; /* Neutral text color */
 }
 
 /* Header Section */
 .header-image {
-    background-color: #0077cc; /* Solid color background for header */
+    background-color: #222140; /* Updated accent color */
     color: white;
     text-align: center;
-    padding: 150px 20px; /* Increase padding for emphasis */
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3); /* Add subtle shadow */
+    padding: 150px 20px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
 
 .header-image .overlay {
@@ -28,7 +28,7 @@ body {
     margin-bottom: 15px;
     font-weight: bold;
     letter-spacing: 1.5px;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Text shadow for emphasis */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
 
 .header-image p {
@@ -44,46 +44,51 @@ main {
 
 /* Course Section */
 .course-section {
-    background: #ffffff; /* Bright and clean background */
+    background: #ffffff;
     padding: 30px;
     margin: 20px auto;
     max-width: 900px;
     border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Subtle shadow for depth */
-    transition: transform 0.2s, box-shadow 0.2s; /* Smooth hover effect */
-}
-
-.course-section:hover {
-    transform: scale(1.02); /* Slight zoom on hover */
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 }
 
 .course-section h2 {
-    color: #0077cc; /* Professional blue color for headings */
-    margin-bottom: 15px;
-    font-size: 2em;
-    border-bottom: 2px solid #0077cc; /* Underline effect */
-    padding-bottom: 5px;
+    color: #222140; /* Updated heading color */
+    margin-bottom: 20px;
+    font-size: 2.5em;
+    text-align: center;
 }
 
-.course-section h3 {
-    color: #005999;
-    margin-top: 25px;
+.subsection {
+    margin-bottom: 30px;
+}
+
+.subsection h3 {
+    color: #222140;
+    margin-top: 20px;
+    font-size: 1.8em;
+    border-left: 4px solid #222140;
+    padding-left: 10px;
+}
+
+.subsection h4 {
+    margin-top: 15px;
     font-size: 1.5em;
+    color: #444;
 }
 
-.course-section p {
+.subsection p {
     margin-bottom: 20px;
     line-height: 1.8;
 }
 
-.course-section ul {
+.subsection ul {
     list-style: disc;
     margin-left: 30px;
     padding-left: 10px;
 }
 
-.course-section ul li {
+.subsection ul li {
     margin-bottom: 10px;
     font-size: 1.1em;
 }
@@ -91,7 +96,7 @@ main {
 /* Footer Section */
 footer {
     text-align: center;
-    background: #333;
+    background: #222140;
     color: white;
     padding: 15px 0;
     margin-top: 30px;
@@ -119,11 +124,12 @@ footer {
         padding: 20px;
     }
 
-    .course-section h2 {
-        font-size: 1.8em;
+    .subsection h3 {
+        font-size: 1.6em;
     }
 
-    .course-section ul li {
+    .subsection ul li {
         font-size: 1em;
     }
 }
+
