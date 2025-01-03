@@ -1,139 +1,112 @@
-/* General Styling */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap'); /* Google Font: Roboto */
+/* Define CSS variables */
+:root {
+  --background: #f4f4f9; /* Light background for the page */
+  --text: #333; /* Dark text for readability */
+  --text-light: #bbb; /* Light gray text for secondary content */
+  --primary: #3498db; /* Main blue accent color */
+  --accent: #e74c3c; /* Secondary accent color, a soft red */
+  --card-bg: #fff; /* White background for cards */
+  --card-hover: #f9f9f9; /* Lighter card background on hover */
+  --surface: #ecf0f1; /* Surface color for certain elements */
+  --nav-bg: rgba(34, 33, 64, 0.9); /* Navbar background with transparency */
+  --transition-fast: 0.2s; /* Fast transition for hover effects */
+  --transition-normal: 0.3s; /* Normal transition for animations */
+  --body-font: 'Roboto', sans-serif; /* Use the sleek 'Roboto' font */
+}
 
+/* Base styles */
 body {
-    font-family: 'Roboto', sans-serif; /* Modern font */
-    margin: 0;
-    padding: 0;
-    line-height: 1.6;
-    background-color: #f4f4f9; /* Subtle background */
-    color: #333; /* Neutral text color */
+  background-color: var(--background);
+  color: var(--text);
+  font-family: var(--body-font);
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
 }
 
-/* Header Section */
-.header-image {
-    background-color: #ffffff; /* Deep accent color */
-    color: white;
-    text-align: center;
-    padding: 150px 20px;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+/* Header styles */
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: var(--nav-bg);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  z-index: 1000;
+  transition: all var(--transition-normal);
 }
 
-.header-image .overlay {
-    padding: 30px;
-    display: inline-block;
-    border-radius: 10px;
+nav {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.header-image h1 {
-    font-size: 3.5em;
-    margin-bottom: 15px;
-    font-weight: 700;
-    letter-spacing: 1.5px;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+.nav-links a {
+  margin-left: 2rem;
+  text-decoration: none;
+  color: var(--text-light);
+  position: relative;
+  transition: color var(--transition-fast);
 }
 
-.header-image p {
-    font-size: 1.2em;
-    margin: 8px 0;
-    font-weight: 500;
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background-color: var(--accent);
+  transition: width var(--transition-normal);
 }
 
-/* Main Content */
-main {
-    padding: 40px 20px;
+.nav-links a:hover {
+  color: var(--text);
 }
 
-/* Course Section */
-.course-section {
-    background: #ffffff;
-    padding: 30px;
-    margin: 20px auto;
-    max-width: 900px;
-    border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+.nav-links a:hover::after {
+  width: 100%;
 }
 
-.course-section h2 {
-    color: #222140; /* Accent color */
-    margin-bottom: 20px;
-    font-size: 2.5em;
-    text-align: center;
+/* Cards */
+.topic-card, .app-card {
+  background: var(--card-bg);
+  padding: 2rem;
+  border-radius: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all var(--transition-normal);
+  position: relative;
+  overflow: hidden;
 }
 
-.subsection {
-    margin-bottom: 30px;
+.topic-card::before, .app-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, var(--primary), var(--accent));
+  opacity: 0;
+  transition: opacity var(--transition-normal);
+  z-index: 0;
 }
 
-.subsection h3 {
-    color: #222140; /* Accent color for subsections */
-    margin-top: 20px;
-    font-size: 1.8em;
-    border-left: 4px solid #222140;
-    padding-left: 10px;
+.topic-card:hover, .app-card:hover {
+  transform: translateY(-5px);
+  background: var(--card-hover);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
 }
 
-.subsection h4 {
-    margin-top: 15px;
-    font-size: 1.5em;
-    color: #444;
+.topic-card:hover::before, .app-card:hover::before {
+  opacity: 0.1;
 }
 
-.subsection p {
-    margin-bottom: 20px;
-    line-height: 1.8;
-}
-
-.subsection ul {
-    list-style: disc;
-    margin-left: 30px;
-    padding-left: 10px;
-}
-
-.subsection ul li {
-    margin-bottom: 10px;
-    font-size: 1.1em;
-}
-
-/* Footer Section */
-footer {
-    text-align: center;
-    background: #222140;
-    color: white;
-    padding: 15px 0;
-    margin-top: 30px;
-    font-size: 0.9em;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .header-image {
-        padding: 100px 10px;
-    }
-
-    .header-image h1 {
-        font-size: 2.5em;
-    }
-
-    .header-image p {
-        font-size: 1em;
-    }
-
-    .course-section {
-        padding: 20px;
-    }
-
-    .subsection h3 {
-        font-size: 1.6em;
-    }
-
-    .subsection ul li {
-        font-size: 1em;
-    }
-}
+.topic-card >
 
     .subsection ul li {
         font-size: 1em;
