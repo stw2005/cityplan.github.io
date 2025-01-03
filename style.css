@@ -10,18 +10,14 @@ body {
 
 /* Header Section */
 .header-image {
-    background-image: url('assets/header.jpg'); /* Add a suitable header image in the assets folder */
-    background-size: cover;
-    background-position: center;
+    background-color: #0077cc; /* Solid color background for header */
     color: white;
     text-align: center;
-    padding: 150px 20px; /* Increase padding for more emphasis */
-    position: relative;
+    padding: 150px 20px; /* Increase padding for emphasis */
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3); /* Add subtle shadow */
 }
 
 .header-image .overlay {
-    background: rgba(0, 0, 0, 0.7); /* Darker overlay for better text contrast */
     padding: 30px;
     display: inline-block;
     border-radius: 10px;
