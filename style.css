@@ -1,18 +1,16 @@
 /* General Styling */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap'); /* Google Font: Roboto */
-
 body {
-    font-family: 'Roboto', sans-serif; /* Modern font */
+    font-family: 'Tahoma', sans-serif; /* Updated font */
     margin: 0;
     padding: 0;
     line-height: 1.6;
-    background-color: #f4f4f9; /* Subtle background */
+    background-color: #f9f9fb; /* Subtle background */
     color: #333; /* Neutral text color */
 }
 
 /* Header Section */
 .header-image {
-    background-color: #222140; /* Deep accent color */
+    background-color: #222140; /* Updated accent color */
     color: white;
     text-align: center;
     padding: 150px 20px;
@@ -28,7 +26,7 @@ body {
 .header-image h1 {
     font-size: 3.5em;
     margin-bottom: 15px;
-    font-weight: 700;
+    font-weight: bold;
     letter-spacing: 1.5px;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
@@ -55,7 +53,7 @@ main {
 }
 
 .course-section h2 {
-    color: #222140; /* Accent color */
+    color: #222140; /* Updated heading color */
     margin-bottom: 20px;
     font-size: 2.5em;
     text-align: center;
@@ -66,7 +64,7 @@ main {
 }
 
 .subsection h3 {
-    color: #222140; /* Accent color for subsections */
+    color: #222140;
     margin-top: 20px;
     font-size: 1.8em;
     border-left: 4px solid #222140;
@@ -129,11 +127,6 @@ footer {
     .subsection h3 {
         font-size: 1.6em;
     }
-
-    .subsection ul li {
-        font-size: 1em;
-    }
-}
 
     .subsection ul li {
         font-size: 1em;
