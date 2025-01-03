@@ -1,6 +1,6 @@
 /* General Styling */
 body {
-    font-family: 'Tahoma', sans-serif; /* Updated font */
+    font-family: 'Open Sans', sans-serif; /* Clean and modern font */
     margin: 0;
     padding: 0;
     line-height: 1.6;
@@ -10,7 +10,7 @@ body {
 
 /* Header Section */
 .header-image {
-    background-color: #222140; /* Updated accent color */
+    background-color: #222140; /* Accent color */
     color: white;
     text-align: center;
     padding: 150px 20px;
@@ -53,7 +53,7 @@ main {
 }
 
 .course-section h2 {
-    color: #222140; /* Updated heading color */
+    color: #222140; /* Accent color */
     margin-bottom: 20px;
     font-size: 2.5em;
     text-align: center;
@@ -64,7 +64,7 @@ main {
 }
 
 .subsection h3 {
-    color: #222140;
+    color: #222140; /* Accent color for subsections */
     margin-top: 20px;
     font-size: 1.8em;
     border-left: 4px solid #222140;
@@ -132,4 +132,3 @@ footer {
         font-size: 1em;
     }
 }
-
