@@ -1,16 +1,18 @@
 /* General Styling */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap'); /* Google Font: Roboto */
+
 body {
-    font-family: 'Open Sans', sans-serif; /* Clean and modern font */
+    font-family: 'Roboto', sans-serif; /* Modern font */
     margin: 0;
     padding: 0;
     line-height: 1.6;
-    background-color: #f9f9fb; /* Subtle background */
+    background-color: #f4f4f9; /* Subtle background */
     color: #333; /* Neutral text color */
 }
 
 /* Header Section */
 .header-image {
-    background-color: #222140; /* Accent color */
+    background-color: #222140; /* Deep accent color */
     color: white;
     text-align: center;
     padding: 150px 20px;
@@ -26,7 +28,7 @@ body {
 .header-image h1 {
     font-size: 3.5em;
     margin-bottom: 15px;
-    font-weight: bold;
+    font-weight: 700;
     letter-spacing: 1.5px;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
@@ -127,6 +129,11 @@ footer {
     .subsection h3 {
         font-size: 1.6em;
     }
+
+    .subsection ul li {
+        font-size: 1em;
+    }
+}
 
     .subsection ul li {
         font-size: 1em;
