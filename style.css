@@ -9,6 +9,7 @@
   --card-hover: #f9f9f9; /* Lighter card background on hover */
   --surface: #ecf0f1; /* Surface color for certain elements */
   --nav-bg: rgba(34, 33, 64, 0.9); /* Navbar background with transparency */
+  --nav-text-color: #E6E6FA; /* Light lavender color for header text */
   --transition-fast: 0.2s; /* Fast transition for hover effects */
   --transition-normal: 0.3s; /* Normal transition for animations */
   --body-font: 'Roboto', sans-serif; /* Use the sleek 'Roboto' font */
@@ -37,6 +38,7 @@ header {
   z-index: 1000;
   transition: all var(--transition-normal);
   padding: 1rem;
+  color: var(--nav-text-color); /* Light lavender for header text */
 }
 
 nav {
@@ -153,11 +155,6 @@ section {
     padding: 1rem;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   }
-
-  .nav-links.active a {
-    margin: 0.5rem 0;
-  }
-}
 
   .nav-links.active a {
     margin: 0.5rem 0;
