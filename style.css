@@ -1,134 +1,70 @@
-/* General Styling */
-body {
-    font-family: 'Tahoma', sans-serif; /* Updated font */
-    margin: 0;
-    padding: 0;
-    line-height: 1.6;
-    background-color: #f9f9fb; /* Subtle background */
-    color: #333; /* Neutral text color */
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>City Design Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header-image">
+        <div class="overlay">
+            <h1>City Design Portfolio</h1>
+            <p>City Name: Tiradhara</p>
+            <p>Course Name: Design and Analysis of Algorithms</p>
+            <p>Course Code: 24ECSC205</p>
+            <p>Course Instructor: Vijaylakshmi Ma'am</p>
+        </div>
+    </header>
 
-/* Header Section */
-.header-image {
-    background-color: #222140; /* Updated accent color */
-    color: white;
-    text-align: center;
-    padding: 150px 20px;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
-}
+    <!-- Main Content -->
+    <main>
+        <!-- Combined Course Section -->
+        <section class="course-section">
+            <h2>Course Details</h2>
+            
+            <!-- Course Introduction -->
+            <div class="subsection">
+                <h3>Course Introduction</h3>
+                <p>This course explores efficient problem-solving through algorithm design, performance analysis, and data structures. Students will learn to evaluate, optimize, and apply algorithms to real-world challenges, building a strong foundation in computational thinking.</p>
+            </div>
 
-.header-image .overlay {
-    padding: 30px;
-    display: inline-block;
-    border-radius: 10px;
-}
+            <!-- Course Overview -->
+            <div class="subsection">
+                <h3>Course Overview</h3>
+                <p>Algorithms simplify complex problems into manageable steps, serving as the logical blueprint for programs. Mastery of algorithm design, with a focus on time and space efficiency, is essential in today’s competitive world. This course aims to develop skills in crafting, implementing, and optimizing algorithms using suitable data structures.</p>
+                
+                <h4>Key Data Structures and Algorithms Studied:</h4>
+                <ul>
+                    <li>Linear Structures: Stacks, queues, and their efficiency analysis.</li>
+                    <li>Non-Linear Structures: Graphs, binary trees, AVL trees, 2-3 trees, and Tries.</li>
+                    <li>Hashing: Hash tables with collision resolution techniques.</li>
+                    <li>Recursive and Iterative Approaches: Understanding recursion vs. iteration through examples like the Towers of Hanoi.</li>
+                    <li>Sorting Techniques: Bubble sort, merge sort, quick sort, and heap sort.</li>
+                    <li>Graph Algorithms: Depth First Search (DFS), Breadth First Search (BFS), shortest path algorithms, and minimum spanning tree algorithms.</li>
+                    <li>Substring Search Algorithms: Boyer-Moore, Knuth-Morris-Pratt, and Rabin-Karp.</li>
+                </ul>
+            </div>
 
-.header-image h1 {
-    font-size: 3.5em;
-    margin-bottom: 15px;
-    font-weight: bold;
-    letter-spacing: 1.5px;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
-}
+            <!-- Real-Time Applications -->
+            <div class="subsection">
+                <h3>Connection to Real-Time Applications</h3>
+                <ul>
+                    <li>Efficient Data Processing: Stacks and queues are essential in task scheduling, undo operations, and real-time data buffering.</li>
+                    <li>Network Design: Graph algorithms like BFS, DFS, and minimum spanning trees are critical in designing telecommunication and utility networks.</li>
+                    <li>Navigation Systems: Shortest path algorithms power GPS navigation, optimizing travel routes and delivery systems.</li>
+                    <li>Authentication and Security: Hash tables are used for password storage and quick validation in secure systems.</li>
+                    <li>Search Optimization: Substring search algorithms are vital in search engines, text editors, and genetic research.</li>
+                    <li>Dynamic User Experience: Sorting algorithms enable seamless data organization for e-commerce sites, social feeds, and financial systems.</li>
+                </ul>
+            </div>
+        </section>
+    </main>
 
-.header-image p {
-    font-size: 1.2em;
-    margin: 8px 0;
-    font-weight: 500;
-}
-
-/* Main Content */
-main {
-    padding: 40px 20px;
-}
-
-/* Course Section */
-.course-section {
-    background: #ffffff;
-    padding: 30px;
-    margin: 20px auto;
-    max-width: 900px;
-    border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-}
-
-.course-section h2 {
-    color: #222140; /* Updated heading color */
-    margin-bottom: 20px;
-    font-size: 2.5em;
-    text-align: center;
-}
-
-.subsection {
-    margin-bottom: 30px;
-}
-
-.subsection h3 {
-    color: #222140;
-    margin-top: 20px;
-    font-size: 1.8em;
-    border-left: 4px solid #222140;
-    padding-left: 10px;
-}
-
-.subsection h4 {
-    margin-top: 15px;
-    font-size: 1.5em;
-    color: #444;
-}
-
-.subsection p {
-    margin-bottom: 20px;
-    line-height: 1.8;
-}
-
-.subsection ul {
-    list-style: disc;
-    margin-left: 30px;
-    padding-left: 10px;
-}
-
-.subsection ul li {
-    margin-bottom: 10px;
-    font-size: 1.1em;
-}
-
-/* Footer Section */
-footer {
-    text-align: center;
-    background: #222140;
-    color: white;
-    padding: 15px 0;
-    margin-top: 30px;
-    font-size: 0.9em;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .header-image {
-        padding: 100px 10px;
-    }
-
-    .header-image h1 {
-        font-size: 2.5em;
-    }
-
-    .header-image p {
-        font-size: 1em;
-    }
-
-    .course-section {
-        padding: 20px;
-    }
-
-    .subsection h3 {
-        font-size: 1.6em;
-    }
-
-    .subsection ul li {
-        font-size: 1em;
-    }
-}
+    <!-- Footer Section -->
+    <footer>
+        <p>Contributor: Anirudh Inamdar</p>
+    </footer>
+</body>
+</html>
