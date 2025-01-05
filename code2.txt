@@ -1,0 +1,156 @@
+#include <iostream>
+#include <vector>
+#include <limits>
+#include <algorithm>
+#include <queue>
+#include <fstream>
+using namespace std;
+
+const int INF = numeric_limits<int>::max();
+
+void Prim(const vector<vector<pair<int, int>>>& G, int start) {
+    int n = G.size();
+    vector<bool> inMST(n, false);
+    vector<int> key(n, INF), parent(n, -1);
+    key[start] = 0;
+
+    using pii = pair<int, int>;
+    priority_queue<pii, vector<pii>, greater<pii>> Q;
+    Q.push({0, start});
+
+    while (!Q.empty()) {
+        int u = Q.top().second;
+        Q.pop();
+
+        if (inMST[u]) continue;
+        inMST[u] = true;
+
+        for (const auto& edge : G[u]) {
+            int v = edge.first;
+            int w = edge.second;
+            if (!inMST[v] && w < key[v]) {
+                key[v] = w;
+                parent[v] = u;
+                Q.push({key[v], v});
+            }
+        }
+    }
+
+    cout << "Edges in MST:" << endl;
+    for (int v = 1; v < n; ++v) {
+        if (parent[v] != -1) {
+            cout << parent[v] << " - " << v << " : " << key[v] << endl;
+        }
+    }
+}
+
+void Floyd(vector<vector<int>>& W) {
+    int n = W.size();
+    for (int k = 0; k < n; ++k) {
+        for (int i = 0; i < n; ++i) {
+            for (int j = 0; j < n; ++j) {
+                if (W[i][k] != INF && W[k][j] != INF) {
+                    W[i][j] = min(W[i][j], W[i][k] + W[k][j]);
+                }
+            }
+        }
+    }
+
+    cout << "All Pairs Shortest Path Matrix:" << endl;
+    for (const auto& row : W) {
+        for (int val : row) {
+            if (val == INF) cout << "INF ";
+            else cout << val << " ";
+        }
+        cout << endl;
+    }
+}
+
+bool BellmanFord(const vector<vector<pair<int, int>>>& G, int s, vector<int>& d) {
+    int n = G.size();
+    d.assign(n, INF);
+    d[s] = 0;
+
+    for (int i = 0; i < n - 1; ++i) {
+        for (int u = 0; u < n; ++u) {
+            for (const auto& edge : G[u]) {
+                int v = edge.first;
+                int w = edge.second;
+                if (d[u] != INF && d[u] + w < d[v]) {
+                    d[v] = d[u] + w;
+                }
+            }
+        }
+    }
+
+    for (int u = 0; u < n; ++u) {
+        for (const auto& edge : G[u]) {
+            int v = edge.first;
+            int w = edge.second;
+            if (d[u] != INF && d[u] + w < d[v]) {
+                return false;
+            }
+        }
+    }
+    return true;
+}
+
+void SelectionSort(vector<int>& A) {
+    int n = A.size();
+    for (int i = 0; i <= n - 2; ++i) {
+        int min = i;
+        for (int j = i + 1; j <= n - 1; ++j) {
+            if (A[j] < A[min]) {
+                min = j;
+            }
+        }
+        swap(A[i], A[min]);
+    }
+}
+
+int LinearSearch(const vector<int>& arr, int target) {
+    for (int i = 0; i < arr.size(); ++i) {
+        if (arr[i] == target) return i;
+    }
+    return -1;
+}
+
+int main() {
+    ifstream infile("isp_network.txt");
+    int n, m;
+    infile >> n >> m;
+
+    vector<vector<pair<int, int>>> graph(n);
+    vector<vector<int>> adjMatrix(n, vector<int>(n, INF));
+
+    for (int i = 0; i < m; ++i) {
+        int u, v, w;
+        infile >> u >> v >> w;
+        graph[u].push_back({v, w});
+        graph[v].push_back({u, w});
+        adjMatrix[u][v] = adjMatrix[v][u] = w;
+    }
+
+    Prim(graph, 0);
+
+    vector<vector<int>> dist(adjMatrix);
+    Floyd(dist);
+
+    vector<int> dist_from_source;
+    bool hasNegativeCycle = BellmanFord(graph, 0, dist_from_source);
+    if (hasNegativeCycle) {
+        cout << "Negative weight cycle detected!" << endl;
+    } else {
+        cout << "No negative weight cycle detected." << endl;
+    }
+
+    vector<int> customerRequests = {2, 1, 5, 4, 3};
+    SelectionSort(customerRequests);
+
+    int targetCustomer = 3;
+    int foundIdx = LinearSearch(customerRequests, targetCustomer);
+    cout << "Customer found at index: " << foundIdx << endl;
+
+    cout << "ISP network optimization complete." << endl;
+    return 0;
+}

@@ -1,0 +1,166 @@
+#include <iostream>
+#include <vector>
+#include <queue>
+#include <limits>
+#include <algorithm>
+using namespace std;
+
+const int INF = numeric_limits<int>::max();
+
+int Partition(vector<int>& A, int l, int r) {
+    int p = A[l];
+    int i = l;
+    int j = r + 1;
+
+    do {
+        do {
+            ++i;
+        } while (i <= r && A[i] < p);
+
+        do {
+            --j;
+        } while (A[j] > p);
+
+        if (i < j) {
+            swap(A[i], A[j]);
+        }
+    } while (i < j);
+
+    swap(A[l], A[j]);
+    return j;
+}
+
+void QuickSort(vector<int>& A, int l, int r) {
+    if (l < r) {
+        int s = Partition(A, l, r);
+        QuickSort(A, l, s - 1);
+        QuickSort(A, s + 1, r);
+    }
+}
+
+int v = 5;
+int m[10][10] = {{0,1,1,0,0}, {1,0,0,1,1},
+        {1,0,0,0,1}, {0,1,0,0,0}, {0,1,1,0,0}};
+int visited[10];
+
+void dfs(int m[10][10], int v, int source) {
+    visited[source] = 1;
+    for (int i = 0; i < v; i++) {
+        if (m[source][i] == 1 && visited[i] == 0) {
+            cout << i << "\t";
+            dfs(m, v, i);
+        }
+    }
+}
+
+void bfs(int m[10][10], int v, int source) {
+    int queue[20];
+    int front = 0, rear = 0, u, i;
+    int visited[10];
+
+    for (i = 0; i < v; i++)
+        visited[i] = 0;
+
+    queue[rear] = source;
+    visited[source] = 1;
+
+    cout << "The BFS Traversal is... \n";
+
+    while (front <= rear) {
+        u = queue[front];
+        cout << u << "\t";
+        front++;
+
+        for (i = 0; i < v; i++) {
+            if (m[u][i] == 1 && visited[i] == 0) {
+                visited[i] = 1;
+                rear++;
+                queue[rear] = i;
+            }
+        }
+    }
+}
+
+void Heapify(vector<int>& H, int n, int k) {
+    int v = H[k];
+    bool heap = false;
+
+    while (!heap && 2 * k <= n) {
+        int j = 2 * k;
+
+        if (j < n && H[j] < H[j + 1]) {
+            ++j;
+        }
+
+        if (v >= H[j]) {
+            heap = true;
+        } else {
+            H[k] = H[j];
+            k = j;
+        }
+    }
+    H[k] = v;
+}
+
+void HeapBottomUp(vector<int>& H) {
+    int n = H.size() - 1;
+    for (int i = n / 2; i >= 1; --i) {
+        Heapify(H, n, i);
+    }
+}
+
+void HeapSort(vector<int>& H) {
+    H.insert(H.begin(), 0);
+    int n = H.size() - 1;
+    HeapBottomUp(H);
+
+    for (int i = n; i > 1; --i) {
+        swap(H[1], H[i]);
+        Heapify(H, i - 1, 1);
+    }
+    H.erase(H.begin());
+}
+
+int BinarySearch(const vector<int>& arr, int target) {
+    int low = 0, high = arr.size() - 1;
+    while (low <= high) {
+        int mid = low + (high - low) / 2;
+        if (arr[mid] == target) return mid;
+        if (arr[mid] < target) low = mid + 1;
+        else high = mid - 1;
+    }
+    return -1;
+}
+
+int main() {
+    vector<vector<int>> warehouseLayout = {
+        {1, 2, 3}, {0, 4}, {0, 3}, {2, 4}, {1, 3}
+    };
+
+    vector<int> productIDs = {101, 203, 105, 402, 308};
+    QuickSort(productIDs, 0, productIDs.size() - 1);
+
+    cout << "DFS traversal of warehouse layout: ";
+    int source;
+    cout << "Enter the source vertex: ";
+    cin >> source;
+    cout << source << "\t";
+    dfs(m, v, source);
+    cout << endl;
+
+    cout << "BFS traversal for shortest route: ";
+    cout << "Enter the source vertex: ";
+    cin >> source;
+    bfs(m, v, source);
+    cout << endl;
+
+    vector<int> productPriorities = {3, 5, 2, 6, 4};
+    HeapSort(productPriorities);
+
+    int targetProduct = 105;
+    int foundIdx = BinarySearch(productIDs, targetProduct);
+    cout << "Product found at index: " << foundIdx << endl;
+
+    cout << "E-commerce warehouse optimization complete." << endl;
+    return 0;
+}

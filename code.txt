@@ -1,0 +1,181 @@
+#include <iostream>
+#include <fstream>
+#include <vector>
+#include <queue>
+#include <limits>
+#include <algorithm>
+using namespace std;
+
+const int INF = numeric_limits<int>::max();
+
+void Dijkstra(const vector<vector<pair<int, int>>>& G, int s) {
+    int n = G.size();
+    vector<int> d(n, INF), p(n, -1);
+    d[s] = 0;
+
+    using pii = pair<int, int>;
+    priority_queue<pii, vector<pii>, greater<pii>> Q;
+
+    Q.push({0, s});
+    while (!Q.empty()) {
+        int u = Q.top().second;
+        Q.pop();
+
+        for (const auto& edge : G[u]) {
+            int v = edge.first;
+            int w = edge.second;
+            if (d[u] + w < d[v]) {
+                d[v] = d[u] + w;
+                p[v] = u;
+                Q.push({d[v], v});
+            }
+        }
+    }
+
+    cout << "Vertex Distance from Source" << endl;
+    for (int i = 0; i < n; ++i) {
+        if (d[i] == INF) {
+            cout << i << "\tINF" << endl;
+        } else {
+            cout << i << "\t" << d[i] << endl;
+        }
+    }
+}
+
+struct Edge {
+    int u, v, w;
+    bool operator<(const Edge& other) const {
+        return w < other.w;
+    }
+};
+
+int Find(int u, vector<int>& parent) {
+    if (u != parent[u])
+        parent[u] = Find(parent[u], parent);
+    return parent[u];
+}
+
+void Union(int u, int v, vector<int>& parent, vector<int>& rank) {
+    u = Find(u, parent);
+    v = Find(v, parent);
+    if (u != v) {
+        if (rank[u] < rank[v]) swap(u, v);
+        parent[v] = u;
+        if (rank[u] == rank[v]) ++rank[u];
+    }
+}
+
+void Kruskal(vector<Edge>& edges, int V) {
+    sort(edges.begin(), edges.end());
+    vector<int> parent(V), rank(V, 0);
+
+    for (int i = 0; i < V; ++i) parent[i] = i;
+
+    vector<Edge> MST;
+    for (const auto& e : edges) {
+        if (Find(e.u, parent) != Find(e.v, parent)) {
+            MST.push_back(e);
+            Union(e.u, e.v, parent, rank);
+        }
+    }
+
+    if (MST.size() != V - 1) {
+        cerr << "Graph is disconnected; full MST is not possible." << endl;
+    }
+
+    cout << "Edges in MST:" << endl;
+    for (const auto& e : MST) {
+        cout << e.u << " - " << e.v << " : " << e.w << endl;
+    }
+}
+
+void Merge(vector<int>& A, int p, int q, int r) {
+    int n1 = q - p + 1;
+    int n2 = r - q;
+
+    vector<int> B(n1), C(n2);
+
+    for (int i = 0; i < n1; ++i)
+        B[i] = A[p + i];
+    for (int j = 0; j < n2; ++j)
+        C[j] = A[q + 1 + j];
+
+    int i = 0, j = 0, k = p;
+    while (i < n1 && j < n2) {
+        if (B[i] <= C[j]) {
+            A[k] = B[i];
+            ++i;
+        } else {
+            A[k] = C[j];
+            ++j;
+        }
+        ++k;
+    }
+
+    while (i < n1) {
+        A[k] = B[i];
+        ++i;
+        ++k;
+    }
+
+    while (j < n2) {
+        A[k] = C[j];
+        ++j;
+        ++k;
+    }
+}
+
+void MergeSort(vector<int>& A, int p, int r) {
+    if (p < r) {
+        int q = (p + r) / 2;
+        MergeSort(A, p, q);
+        MergeSort(A, q + 1, r);
+        Merge(A, p, q, r);
+    }
+}
+
+int BinarySearch(const vector<int>& arr, int target) {
+    int low = 0, high = arr.size() - 1;
+    while (low <= high) {
+        int mid = low + (high - low) / 2;
+        if (arr[mid] == target) return mid;
+        if (arr[mid] < target) low = mid + 1;
+        else high - 1;
+    }
+    return -1;
+}
+
+int main() {
+    ifstream infile("uber_routes_input.txt");
+    if (!infile) {
+        cerr << "Error: Unable to open input file." << endl;
+        return 1;
+    }
+
+    int n;
+    infile >> n;
+
+    vector<vector<pair<int, int>>> graph(n);
+    vector<Edge> edges;
+
+    int u, v, w;
+    while (infile >> u >> v >> w) {
+        graph[u].push_back({v, w});
+        graph[v].push_back({u, w});
+        edges.push_back({u, v, w});
+    }
+
+    Dijkstra(graph, 0);
+
+    Kruskal(edges, n);
+
+    vector<int> customerRequests = {2, 3, 1, 5, 4};
+    MergeSort(customerRequests, 0, customerRequests.size() - 1);
+
+    int targetDriver = 3;
+    int result = BinarySearch(customerRequests, targetDriver);
+    cout << "Driver found at index: " << result << endl;
+
+    cout << "Uber route optimization and network analysis complete." << endl;
+    return 0;
+}
