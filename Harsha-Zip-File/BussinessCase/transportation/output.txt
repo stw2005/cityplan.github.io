@@ -1,0 +1,14 @@
+The roads to be constructed are: 
+Srirampura to Chamarajapura	Distance: 3.45
+Srirampura to Bannimantap	Distance: 4.12
+Kuvempu Nagara to Hulikere	Distance: 4.89
+Kuvempu Nagara to Srirampura	Distance: 5.23
+Bogadi Road to Alanahalli	Distance: 5.67
+Kuvempu Nagara to Belvata	Distance: 6.12
+J P Nagar to Bogadi Road	Distance: 6.23
+Belvata to Jantagalli	Distance: 6.45
+J P Nagar to Chamarajapura	Distance: 6.78
+Belvata to Gokulam	Distance: 6.89
+Boochahalli to Alanahalli	Distance: 6.89
+
+The total length of the road is 62.72

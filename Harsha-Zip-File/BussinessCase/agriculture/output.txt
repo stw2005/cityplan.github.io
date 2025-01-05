@@ -1,0 +1,45 @@
+			Data Analysis of crops
+The most vulnerable crop is Coffee
+The least vulnerable crop is Soybean
+
+The impact of Wheat on:
+Wheat: 0
+Rice: 343.056
+Corn: 14.6714
+Potato: 159.288
+Tomato: 328.99
+Carrot: 333.657
+Onion: 104.313
+Cabbage: 205.642
+Peanuts: 274.382
+Soybean: 95.2423
+Cotton: 252.216
+Sugarcane: 392.389
+Spinach: 67.1336
+Lettuce: 101.731
+Cucumber: 347.201
+Eggplant: 293.148
+Sunflower: 353.14
+Mustard: 179.344
+Sesame: 295.456
+Hemp: 145.878
+Cassava: 34.2239
+Ginger: 6.14542
+Coffee: 380.65
+Tea: 260.764
+Cocoa: 142.867
+Alfalfa: 293.428
+Millet: 208.146
+Chickpea: 349.274
+Lentils: 95.2605
+Cauliflower: 10.7786
+Broccoli: 217.082
+Asparagus: 155.002
+Pumpkin: 190.852
+Watermelon: 338.723
+Strawberry: 217.881
+Grape: 314.005
+Bamboo: 285.834
+Clover: 277.968
+Flax: 327.628
+Jute: 400.499

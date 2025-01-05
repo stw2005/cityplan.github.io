@@ -1,0 +1,485 @@
+SRN: 01FE22BEC017
+Name: Priya Desai
+Division: C
+Percentage: 99.29
+
+SRN: 01FE22BEC008
+Name: Aarav Sharma
+Division: C
+Percentage: 99.22
+
+SRN: 01FE22BEC250
+Name: Vihaan Sharma
+Division: C
+Percentage: 98.06
+
+SRN: 01FE22BEC202
+Name: Ayaan Reddy
+Division: C
+Percentage: 97.98
+
+SRN: 01FE22BEC107
+Name: Vihaan Sharma
+Division: C
+Percentage: 97.88
+
+SRN: 01FE22BEC068
+Name: Reyansh Gupta
+Division: C
+Percentage: 97.72
+
+SRN: 01FE22BEC223
+Name: Reyansh Gupta
+Division: C
+Percentage: 97.65
+
+SRN: 01FE21BEC223
+Name: Reyansh Gupta
+Division: C
+Percentage: 97.65
+
+SRN: 01FE21BEC221
+Name: Aditya Kumar
+Division: C
+Percentage: 97.06
+
+SRN: 01FE22BEC221
+Name: Aditya Kumar
+Division: C
+Percentage: 97.06
+
+SRN: 01FE22BEC160
+Name: Vihaan Sharma
+Division: C
+Percentage: 95.21
+
+SRN: 01FE21BEC227
+Name: Reyansh Gupta
+Division: C
+Percentage: 94.85
+
+SRN: 01FE22BEC227
+Name: Reyansh Gupta
+Division: C
+Percentage: 94.85
+
+SRN: 01FE22BEC120
+Name: Vivaan Patel
+Division: C
+Percentage: 93.62
+
+SRN: 01FE21BEC220
+Name: Ayaan Reddy
+Division: C
+Percentage: 93.29
+
+SRN: 01FE22BEC220
+Name: Ayaan Reddy
+Division: C
+Percentage: 93.29
+
+SRN: 01FE22BEC080
+Name: Aarav Sharma
+Division: C
+Percentage: 92.61
+
+SRN: 01FE22BEC121
+Name: Rohan Verma
+Division: C
+Percentage: 92.29
+
+SRN: 01FE22BEC026
+Name: Priya Desai
+Division: C
+Percentage: 89.99
+
+SRN: 01FE22BEC229
+Name: Arjun Joshi
+Division: C
+Percentage: 89.71
+
+SRN: 01FE21BEC229
+Name: Arjun Joshi
+Division: C
+Percentage: 89.71
+
+SRN: 01FE22BEC027
+Name: Reyansh Gupta
+Division: C
+Percentage: 89.71
+
+SRN: 01FE22BEC082
+Name: Reyansh Gupta
+Division: C
+Percentage: 89.6
+
+SRN: 01FE22BEC028
+Name: Vihaan Sharma
+Division: C
+Percentage: 88.69
+
+SRN: 01FE22BEC006
+Name: Ishaan Mehta
+Division: C
+Percentage: 87.9
+
+SRN: 01FE22BEC111
+Name: Simran Yadav
+Division: C
+Percentage: 87.62
+
+SRN: 01FE22BEC217
+Name: Ayaan Reddy
+Division: C
+Percentage: 86.58
+
+SRN: 01FE22BEC152
+Name: Sai Singh
+Division: C
+Percentage: 86.26
+
+SRN: 01FE22BEC216
+Name: Arjun Joshi
+Division: C
+Percentage: 86.26
+
+SRN: 01FE22BEC127
+Name: Ananya Rao
+Division: C
+Percentage: 84.98
+
+SRN: 01FE22BEC168
+Name: Arjun Joshi
+Division: C
+Percentage: 82.37
+
+SRN: 01FE22BEC026
+Name: Madhavi Singh
+Division: C
+Percentage: 79.82
+
+SRN: 01FE22BEC182
+Name: Reyansh Gupta
+Division: C
+Percentage: 79.07
+
+SRN: 01FE22BEC151
+Name: Rohan Verma
+Division: C
+Percentage: 77.25
+
+SRN: 01FE22BEC010
+Name: Vivaan Patel
+Division: C
+Percentage: 75.25
+
+SRN: 01FE22BEC020
+Name: Neha Gupta
+Division: C
+Percentage: 75.1
+
+SRN: 01FE22BEC072
+Name: Ishaan Mehta
+Division: C
+Percentage: 75.1
+
+SRN: 01FE22BEC002
+Name: Arjun Joshi
+Division: C
+Percentage: 75.02
+
+SRN: 01FE22BEC072
+Name: Vihaan Sharma
+Division: C
+Percentage: 72.82
+
+SRN: 01FE22BEC119
+Name: Reyansh Gupta
+Division: C
+Percentage: 72.82
+
+SRN: 01FE22BEC126
+Name: Arjun Joshi
+Division: C
+Percentage: 72.72
+
+SRN: 01FE22BEC056
+Name: Ayaan Reddy
+Division: C
+Percentage: 72.61
+
+SRN: 01FE22BEC178
+Name: Ishaan Mehta
+Division: C
+Percentage: 72.56
+
+SRN: 01FE22BEC219
+Name: Isha Kapoor
+Division: C
+Percentage: 72.16
+
+SRN: 01FE22BEC120
+Name: Isha Kapoor
+Division: C
+Percentage: 72.01
+
+SRN: 01FE22BEC129
+Name: Aditya Kumar
+Division: C
+Percentage: 71.76
+
+SRN: 01FE22BEC101
+Name: Ishaan Mehta
+Division: C
+Percentage: 71.5
+
+SRN: 01FE22BEC198
+Name: Saanvi Patel
+Division: C
+Percentage: 71.29
+
+SRN: 01FE22BEC115
+Name: Ishaan Mehta
+Division: C
+Percentage: 69.02
+
+SRN: 01FE22BEC122
+Name: Aarav Sharma
+Division: C
+Percentage: 68.22
+
+SRN: 01FE21BEC122
+Name: Aarav Sharma
+Division: C
+Percentage: 68.22
+
+SRN: 01FE22BEC218
+Name: Simran Yadav
+Division: C
+Percentage: 68.1
+
+SRN: 01FE21BEC228
+Name: Vihaan Sharma
+Division: C
+Percentage: 67.26
+
+SRN: 01FE22BEC228
+Name: Vihaan Sharma
+Division: C
+Percentage: 67.26
+
+SRN: 01FE22BEC105
+Name: Simran Yadav
+Division: C
+Percentage: 67.22
+
+SRN: 01FE22BEC156
+Name: Neha Gupta
+Division: C
+Percentage: 67.02
+
+SRN: 01FE22BEC192
+Name: Ishaan Mehta
+Division: C
+Percentage: 66.66
+
+SRN: 01FE22BEC159
+Name: Rohan Verma
+Division: C
+Percentage: 65.6
+
+SRN: 01FE22BEC092
+Name: Aarav Sharma
+Division: C
+Percentage: 65.03
+
+SRN: 01FE22BEC025
+Name: Tanya Jain
+Division: C
+Percentage: 64.72
+
+SRN: 01FE22BEC205
+Name: Aarav Sharma
+Division: C
+Percentage: 62.99
+
+SRN: 01FE22BEC128
+Name: Priya Desai
+Division: C
+Percentage: 62.88
+
+SRN: 01FE21BEC022
+Name: Isha Kapoor
+Division: C
+Percentage: 62.47
+
+SRN: 01FE22BEC022
+Name: Isha Kapoor
+Division: C
+Percentage: 62.47
+
+SRN: 01FE22BEC117
+Name: Sai Singh
+Division: C
+Percentage: 62.39
+
+SRN: 01FE22BEC020
+Name: Sai Singh
+Division: C
+Percentage: 62.39
+
+SRN: 01FE22BEC092
+Name: Saanvi Patel
+Division: C
+Percentage: 61.75
+
+SRN: 01FE22BEC082
+Name: Ananya Rao
+Division: C
+Percentage: 61.24
+
+SRN: 01FE22BEC089
+Name: Vihaan Sharma
+Division: C
+Percentage: 61.15
+
+SRN: 01FE22BEC200
+Name: Rohan Verma
+Division: C
+Percentage: 61.09
+
+SRN: 01FE22BEC028
+Name: Rohan Verma
+Division: C
+Percentage: 60.69
+
+SRN: 01FE22BEC015
+Name: Ishaan Mehta
+Division: C
+Percentage: 60.62
+
+SRN: 01FE22BEC106
+Name: Simran Yadav
+Division: C
+Percentage: 58.6
+
+SRN: 01FE22BEC152
+Name: Madhavi Singh
+Division: C
+Percentage: 57.8
+
+SRN: 01FE22BEC172
+Name: Isha Kapoor
+Division: C
+Percentage: 57.8
+
+SRN: 01FE22BEC018
+Name: Diya Reddy
+Division: C
+Percentage: 57.28
+
+SRN: 01FE22BEC021
+Name: Neha Gupta
+Division: C
+Percentage: 56.65
+
+SRN: 01FE22BEC212
+Name: Rohan Verma
+Division: C
+Percentage: 56.62
+
+SRN: 01FE22BEC188
+Name: Arjun Joshi
+Division: C
+Percentage: 56.02
+
+SRN: 01FE22BEC029
+Name: Diya Reddy
+Division: C
+Percentage: 55.72
+
+SRN: 01FE22BEC122
+Name: Ananya Rao
+Division: C
+Percentage: 55.5
+
+SRN: 01FE23BEC122
+Name: Ananya Rao
+Division: C
+Percentage: 55.5
+
+SRN: 01FE24BEC122
+Name: Ananya Rao
+Division: C
+Percentage: 55.5
+
+SRN: 01FE21BEC122
+Name: Ananya Rao
+Division: C
+Percentage: 55.5
+
+SRN: 01FE22BEC212
+Name: Ananya Rao
+Division: C
+Percentage: 55.38
+
+SRN: 01FE22BEC162
+Name: Priya Desai
+Division: C
+Percentage: 54.62
+
+SRN: 01FE22BEC127
+Name: Ananya Rao
+Division: C
+Percentage: 52.71
+
+SRN: 01FE22BEC118
+Name: Vihaan Sharma
+Division: C
+Percentage: 52.7
+
+SRN: 01FE22BEC226
+Name: Diya Reddy
+Division: C
+Percentage: 52.58
+
+SRN: 01FE24BEC226
+Name: Diya Reddy
+Division: C
+Percentage: 52.58
+
+SRN: 01FE23BEC226
+Name: Diya Reddy
+Division: C
+Percentage: 52.58
+
+SRN: 01FE21BEC226
+Name: Diya Reddy
+Division: C
+Percentage: 52.58
+
+SRN: 01FE22BEC187
+Name: Aditya Kumar
+Division: C
+Percentage: 52.48
+
+SRN: 01FE22BEC071
+Name: Vihaan Sharma
+Division: C
+Percentage: 52.2
+
+SRN: 01FE21BEC225
+Name: Priya Desai
+Division: C
+Percentage: 52.08
+
+SRN: 01FE22BEC225
+Name: Priya Desai
+Division: C
+Percentage: 52.08
+
+SRN: 01FE22BEC012
+Name: Ananya Rao
+Division: C
+Percentage: 51.08
+
