@@ -7,39 +7,48 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Header Section -->
-    <header class="header-image">
-        <div class="overlay">
-            <h1>Business Cases</h1>
-        </div>
-    </header>
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="businesscases.html" class="active">Business Cases</a>
+    </div>
 
     <!-- Main Content -->
-    <main>
-        <section class="team-section">
-            <h2>Team Members</h2>
-            <div class="member">
-                <h3>Divya Patil</h3>
-                <p>Roll Number: 225</p>
-                <p>USN: <span contenteditable="true">[Add USN]</span></p>
-                <button onclick="window.location.href='https://example.com/business-cases';">Business Cases</button>
-                <button onclick="window.location.href='https://example.com/reflections';">Reflections</button>
+    <main class="business-page">
+        <h2>Team Members</h2>
+
+        <!-- Member 1 -->
+        <div class="team-member">
+            <h3>Divya Patil</h3>
+            <p>Roll Number: 225</p>
+            <p>USN: <span class="usn-placeholder">________</span></p>
+            <div class="buttons">
+                <button onclick="window.location.href='#';">Business Cases</button>
+                <button onclick="window.location.href='#';">Reflections</button>
             </div>
-            <div class="member">
-                <h3>Harsha</h3>
-                <p>Roll Number: [Add Roll Number]</p>
-                <p>USN: <span contenteditable="true">[Add USN]</span></p>
-                <button onclick="window.location.href='https://example.com/business-cases';">Business Cases</button>
-                <button onclick="window.location.href='https://example.com/reflections';">Reflections</button>
+        </div>
+
+        <!-- Member 2 -->
+        <div class="team-member">
+            <h3>Harsha</h3>
+            <p>Roll Number: <span class="roll-placeholder">________</span></p>
+            <p>USN: <span class="usn-placeholder">________</span></p>
+            <div class="buttons">
+                <button onclick="window.location.href='#';">Business Cases</button>
+                <button onclick="window.location.href='#';">Reflections</button>
             </div>
-            <div class="member">
-                <h3>Satwik Maharana</h3>
-                <p>Roll Number: 222</p>
-                <p>USN: <span contenteditable="true">[Add USN]</span></p>
-                <button onclick="window.location.href='https://example.com/business-cases';">Business Cases</button>
-                <button onclick="window.location.href='https://example.com/reflections';">Reflections</button>
+        </div>
+
+        <!-- Member 3 -->
+        <div class="team-member">
+            <h3>Satwik Maharana</h3>
+            <p>Roll Number: 222</p>
+            <p>USN: <span class="usn-placeholder">________</span></p>
+            <div class="buttons">
+                <button onclick="window.location.href='#';">Business Cases</button>
+                <button onclick="window.location.href='#';">Reflections</button>
             </div>
-        </section>
+        </div>
     </main>
 </body>
 </html>
