@@ -5,68 +5,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>City Design Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Navigation Bar -->
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="businesscases.html">Business Cases</a></li>
-        </ul>
-    </nav>
+    <div class="navbar">
+        <a href="index.html" class="active">Home</a>
+        <a href="businesscases.html">Business Cases</a>
+    </div>
 
     <!-- Header Section -->
-    <header class="header-image">
-        <div class="overlay">
-            <h1>City Design Portfolio</h1>
-            <p>City Name: Tiradhara</p>
-            <p>Course Name: Design and Analysis of Algorithms</p>
-            <p>Course Code: 24ECSC205</p>
-            <p>Course Instructor: Vijaylakshmi Ma'am</p>
-        </div>
+    <header class="header">
+        <h1>City Design Portfolio</h1>
+        <p>City Name: Tiradhara</p>
+        <p>Course Name: Design and Analysis of Algorithms (DAA)</p>
+        <p>Course Code: 24ECSC205</p>
+        <p>Course Instructor: Vijaylakshmi Ma'am</p>
     </header>
 
-    <!-- Main Content -->
+    <!-- Course Details Section -->
     <main>
-        <!-- Combined Course Section -->
-        <section class="course-section">
+        <section class="course-details">
             <h2>Course Details</h2>
-
-            <!-- Course Introduction -->
-            <div class="subsection">
-                <h3>Course Introduction</h3>
-                <p>This course explores efficient problem-solving through algorithm design, performance analysis, and data structures. Students will learn to evaluate, optimize, and apply algorithms to real-world challenges, building a strong foundation in computational thinking.</p>
-            </div>
-
-            <!-- Course Overview -->
-            <div class="subsection">
-                <h3>Course Overview</h3>
-                <p>Algorithms simplify complex problems into manageable steps, serving as the logical blueprint for programs. Mastery of algorithm design, with a focus on time and space efficiency, is essential in today’s competitive world. This course aims to develop skills in crafting, implementing, and optimizing algorithms using suitable data structures.</p>
-
-                <h4>Key Data Structures and Algorithms Studied:</h4>
-                <ul>
-                    <li>Linear Structures: Stacks, queues, and their efficiency analysis.</li>
-                    <li>Non-Linear Structures: Graphs, binary trees, AVL trees, 2-3 trees, and Tries.</li>
-                    <li>Hashing: Hash tables with collision resolution techniques.</li>
-                    <li>Recursive and Iterative Approaches: Understanding recursion vs. iteration through examples like the Towers of Hanoi.</li>
-                    <li>Sorting Techniques: Bubble sort, merge sort, quick sort, and heap sort.</li>
-                    <li>Graph Algorithms: Depth First Search (DFS), Breadth First Search (BFS), shortest path algorithms, and minimum spanning tree algorithms.</li>
-                    <li>Substring Search Algorithms: Boyer-Moore, Knuth-Morris-Pratt, and Rabin-Karp.</li>
-                </ul>
-            </div>
-
-            <!-- Real-Time Applications -->
-            <div class="subsection">
-                <h3>Connection to Real-Time Applications</h3>
-                <ul>
-                    <li>Efficient Data Processing: Stacks and queues are essential in task scheduling, undo operations, and real-time data buffering.</li>
-                    <li>Network Design: Graph algorithms like BFS, DFS, and minimum spanning trees are critical in designing telecommunication and utility networks.</li>
-                    <li>Navigation Systems: Shortest path algorithms power GPS navigation, optimizing travel routes and delivery systems.</li>
-                    <li>Authentication and Security: Hash tables are used for password storage and quick validation in secure systems.</li>
-                    <li>Search Optimization: Substring search algorithms are vital in search engines, text editors, and genetic research.</li>
-                    <li>Dynamic User Experience: Sorting algorithms enable seamless data organization for e-commerce sites, social feeds, and financial systems.</li>
-                </ul>
-            </div>
+            <h3>Course Introduction</h3>
+            <p>
+                This course explores efficient problem-solving through algorithm design, performance analysis, and data structures. Students will learn to evaluate, optimize, and apply algorithms to real-world challenges, building a strong foundation in computational thinking.
+            </p>
+            <h3>Course Overview</h3>
+            <p>
+                Algorithms simplify complex problems into manageable steps, serving as the logical blueprint for programs. Mastery of algorithm design, with a focus on time and space efficiency, is essential in today’s competitive world. This course aims to develop skills in crafting, implementing, and optimizing algorithms using suitable data structures.
+            </p>
+            <h3>Key Data Structures and Algorithms Studied:</h3>
+            <ul>
+                <li>Linear Structures: Stacks, queues, and their efficiency analysis.</li>
+                <li>Non-Linear Structures: Graphs, binary trees, AVL trees, 2-3 trees, and Tries.</li>
+                <li>Hashing: Hash tables with collision resolution techniques.</li>
+                <li>Recursive and Iterative Approaches: Understanding recursion vs. iteration through examples like the Towers of Hanoi.</li>
+                <li>Sorting Techniques: Bubble sort, merge sort, quick sort, and heap sort.</li>
+                <li>Graph Algorithms: DFS, BFS, shortest path algorithms, and minimum spanning tree algorithms.</li>
+                <li>Substring Search Algorithms: Boyer-Moore, Knuth-Morris-Pratt, and Rabin-Karp.</li>
+            </ul>
+            <h3>Connection to Real-Time Applications</h3>
+            <p>
+                <strong>Efficient Data Processing:</strong> Stacks and queues are essential in task scheduling, undo operations, and real-time data buffering.<br>
+                <strong>Network Design:</strong> Graph algorithms like BFS, DFS, and minimum spanning trees are critical in designing telecommunication and utility networks.<br>
+                <strong>Navigation Systems:</strong> Shortest path algorithms power GPS navigation, optimizing travel routes and delivery systems.<br>
+                <strong>Authentication and Security:</strong> Hash tables are used for password storage and quick validation in secure systems.<br>
+                <strong>Search Optimization:</strong> Substring search algorithms are vital in search engines, text editors, and genetic research.<br>
+                <strong>Dynamic User Experience:</strong> Sorting algorithms enable seamless data organization for e-commerce sites, social feeds, and financial systems.
+            </p>
         </section>
     </main>
 </body>
