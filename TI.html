@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Cases SDG Mapping</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h1, h2, h3 {
+            color: #333;
+        }
+
+        p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+
+        .section {
+            background-color: #fff;
+            padding: 20px;
+            margin: 20px 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-top: 20px;
+            background-color: #007BFF;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            transition: background-color 0.3s;
+        }
+
+        .button:hover {
+            background-color: #0056b3;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            background-color: #fff;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+
+        th {
+            background-color: #f4f4f4;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>SDG Mapping for Business Cases</h1>
+
+        <!-- Business Case: Internet Service Provider (ISP) -->
+        <div class="section">
+            <h2>1. Internet Service Provider (ISP)</h2>
+            <p><strong>Target 11.3:</strong> Promote inclusive and sustainable urbanization and strengthen participatory urban settlement planning globally.</p>
+            <p><strong>Indicator 11.3.2:</strong> Percentage of cities with active civil society participation in urban management and planning, operating consistently and democratically.</p>
+            <p><strong>Target 11.5:</strong> By 2030, lower disaster impacts significantly, focusing on protecting vulnerable populations from various calamities, including water-related ones.</p>
+            <p><strong>Indicator 11.5.2:</strong> Economic loss from disasters relative to global GDP, including damage to vital infrastructure and service disruptions.</p>
+            <p><strong>Target 11.6:</strong> Minimize urban environmental impact per person by 2030, focusing on air quality and effective waste management.</p>
+            <p><strong>Indicator 11.6.1:</strong> Share of urban solid waste that is regularly collected and disposed of properly, city-wise.</p>
+
+            <h3>Scenario: ISP Expansion in Bhopal</h3>
+            <p>
+                An Internet Service Provider (ISP) is rolling out its high-speed fiber network across Bhopal. To address growing data needs, the ISP must strategically optimize its fiber installation to balance cost and ensure robust connectivity in priority zones. Minimum Spanning Tree (MST) algorithms facilitate this optimization effectively.
+            </p>
+
+            <h4>Zones and Data Demand:</h4>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Sl. No.</th>
+                        <th>Zone Name</th>
+                        <th>Data Demand (MBps)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Arera Colony</td>
+                        <td>300</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>MP Nagar</td>
+                        <td>450</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Kolar</td>
+                        <td>350</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Bairagarh</td>
+                        <td>250</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>Ayodhya Bypass</td>
+                        <td>200</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>Algorithms Used</h3>
+            <ul>
+                <li><strong>Prim's Algorithm:</strong> Generates the Minimum Spanning Tree (MST) to optimize cable layout.</li>
+                <li><strong>Floyd-Warshall Algorithm:</strong> Calculates the shortest paths between all node pairs to evaluate network latency and boost redundancy.</li>
+                <li><strong>Bellman-Ford Algorithm:</strong> Detects negative weight cycles to maintain network reliability.</li>
+                <li><strong>Selection Sort and Linear Search:</strong> Efficiently sorts bandwidth requests and locates specific demands.</li>
+            </ul>
+
+            <a href="code2.txt" class="button">Code</a>
+        </div>
+
+        <!-- Business Case: TNC / Uber -->
+        <div class="section">
+            <h2>2. Transportation Network Company (TNC) / Uber</h2>
+            <p><strong>Target 11.2:</strong> Ensure by 2030 that all individuals have access to safe, affordable, and sustainable transportation systems, improving road safety and prioritizing the needs of vulnerable groups, including women, children, elderly, and differently-abled persons.</p>
+            <p><strong>Indicator 11.2.1:</strong> Percentage of population with reliable access to public transport, categorized by age, gender, and disability.</p>
+
+            <h3>Example Scenario: Bhopal TNC Optimization</h3>
+            <p>A Transportation Network Company (TNC) in Bhopal optimizes driver routes by analyzing real-time traffic conditions and ride demand. The system computes the quickest travel times across zones to provide efficient services.</p>
+
+            <h4>Office Hubs and Pickup Points Across Bhopal:</h4>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Sl. No.</th>
+                        <th>Zone Name</th>
+                        <th>Number of Pickup Points</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>New Market</td>
+                        <td>12</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>TT Nagar</td>
+                        <td>8</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Habibganj</td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Shahpura</td>
+                        <td>6</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>Karond</td>
+                        <td>9</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>Algorithms Used</h3>
+            <ul>
+                <li><strong>Dijkstra's Algorithm:</strong> Finds the shortest paths between points, factoring in traffic data.</li>
+                <li><strong>Kruskal's Algorithm:</strong> Develops a Minimum Spanning Tree for route optimization.</li>
+                <li><strong>Merge Sort and Binary Search:</strong> Organizes ride requests and searches for drivers/zones effectively.</li>
+            </ul>
+
+            <a href="code.txt" class="button">Code</a>
+        </div>
+
+        <!-- Business Case: E-commerce Warehouse Optimization -->
+        <div class="section">
+            <h2>3. E-commerce Warehouse Optimization</h2>
+            <p><strong>Target 11.6:</strong> By 2030, cut down urban environmental impact, focusing on air quality and waste management strategies.</p>
+            <p><strong>Indicator 11.6.1:</strong> Proportion of urban waste properly collected and processed out of total waste generated, by urban areas.</p>
+
+            <h3>Scenario: E-commerce Warehouse Optimization in Bhopal</h3>
+            <p>An e-commerce business refines its transportation from warehouses to urban zones, aiming to reduce expenses and delivery durations. A cost matrix represents optimal route selection challenges.</p>
+
+            <h4>Warehouses and Capacities:</h4>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Sl. No.</th>
+                        <th>Warehouse Name</th>
+                        <th>Capacity (in MB)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Misrod</td>
+                        <td>2000</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Govindpura</td>
+                        <td>1500</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Mandir Hasaud</td>
+                        <td>2500</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>Algorithms Used</h3>
+            <ul>
+                <li><strong>Quick Sort:</strong> Arranges product IDs or warehouse data for prioritization.</li>
+                <li><strong>DFS and BFS Traversals:</strong> Analyzes routes and identifies optimal pathways.</li>
+                <li><strong>Heap Sort and Binary Search:</strong> Organizes and finds products efficiently.</li>
+            </ul>
+
+            <a href="code3.txt" class="button">Code</a>
+        </div>
+
+        <div class="section">
+            <p><a href="341 source code.zip" class="button">Codes of all business cases (zip file)</a></p>
+            <p><a href="course-project-eval-sheet(341).docx" class="button">Course Project Evaluation Sheet</a></p>
+        </div>
+    </div>
+
+</body>
+</html>
